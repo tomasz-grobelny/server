@@ -75,6 +75,8 @@ class Share implements \OCP\Share\IShare {
 	private $shareTime;
 	/** @var bool */
 	private $mailSend;
+	/** @var string */
+	private $label = '';
 
 	/** @var IRootFolder */
 	private $rootFolder;
@@ -328,6 +330,20 @@ class Share implements \OCP\Share\IShare {
 			return $this->note;
 		}
 		return '';
+	}
+
+	/**
+	 * @inheritdoc
+	 */
+	public function setLabel($label) {
+		$this->label = $label;
+	}
+
+	/**
+	 * @inheritdoc
+	 */
+	public function getLabel() {
+		return $this->label;
 	}
 
 	/**
