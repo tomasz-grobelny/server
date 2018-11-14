@@ -2171,29 +2171,6 @@
 				fileNames = [fileNames];
 			}
 
-			function Semaphore(max) {
-				var counter = 0;
-				var waiting = [];
-
-				this.acquire = function() {
-					if(counter < max) {
-						counter++;
-						return new Promise(function(resolve) { resolve(); });
-					} else {
-						return new Promise(function(resolve) { waiting.push(resolve); });
-					}
-				};
-
-				this.release = function() {
-					counter--;
-					if (waiting.length > 0 && counter < max) {
-						counter++;
-						var promise = waiting.shift();
-						promise();
-					}
-				};
-			}
-
 			var moveFileFunction = function(fileName) {
 				var $tr = self.findFileEl(fileName);
 				self.showFileBusyState($tr, true);
@@ -2234,14 +2211,20 @@
 						self.showFileBusyState($tr, false);
 					});
 			};
+			return this.reportOperationProgress(fileNames, moveFileFunction, callback);
+		},
 
-			var mcSemaphore = new Semaphore(10);
+		reportOperationProgress: function (fileNames, operationFunction, callback){
+			var self = this;
+			self._operationProgressBar.showProgressBar(false);
+			var mcSemaphore = new OCA.Files.Semaphore(5);
 			var counter = 0;
 			var promises = _.map(fileNames, function(arg) {
 				return mcSemaphore.acquire().then(function(){
-					moveFileFunction(arg).then(function(){
+					return operationFunction(arg).then(function(){
 						mcSemaphore.release();
 						counter++;
+						self._operationProgressBar.setProgressBarValue(100.0*counter/fileNames.length);
 					});
 				});
 			});
@@ -2250,6 +2233,7 @@
 				if (callback) {
 					callback();
 				}
+				self._operationProgressBar.hideProgressBar();
 			});
 		},
 
@@ -2274,7 +2258,7 @@
 			if (!_.isArray(fileNames)) {
 				fileNames = [fileNames];
 			}
-			_.each(fileNames, function(fileName) {
+			var copyFileFunction = function(fileName) {
 				var $tr = self.findFileEl(fileName);
 				self.showFileBusyState($tr, true);
 				if (targetPath.charAt(targetPath.length - 1) !== '/') {
@@ -2353,11 +2337,8 @@
 							}
 						}
 					});
-			});
-
-			if (callback) {
-				callback();
-			}
+			};
+			return this.reportOperationProgress(fileNames, copyFileFunction, callback);
 		},
 
 		/**
