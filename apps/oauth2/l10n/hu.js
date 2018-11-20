@@ -4,11 +4,11 @@ OC.L10N.register(
     "OAuth 2.0" : "OAuth 2.0",
     "OAuth 2.0 clients" : "OAuth 2.0 kliensek",
     "Name" : "Név",
-    "Client Identifier" : "Ügyfél azonosító",
-    "Add client" : "Ügyfél hozzáadás",
-    "OAuth 2.0 allows external services to request access to %s." : "OAuth 2.0 megengedi külső szolgáltatásoknak, hogy hozzáférést kérjenek ehhez: %s.",
     "Redirection URI" : "Átirányítési URI",
+    "Client Identifier" : "Ügyfél azonosító",
     "Secret" : "Titok",
-    "Add" : "Hozzáadás"
+    "Add client" : "Ügyfél hozzáadás",
+    "Add" : "Hozzáadás",
+    "OAuth 2.0 allows external services to request access to %s." : "OAuth 2.0 megengedi külső szolgáltatásoknak, hogy hozzáférést kérjenek ehhez: %s."
 },
 "nplurals=2; plural=(n != 1);");
