@@ -313,6 +313,24 @@ class OC_Util {
 		return true;
 	}
 
+	public static function resetupFS($user = '') {
+		// If we are not forced to load a specific user we load the one that is logged in
+		if ($user === null) {
+			$user = '';
+		} else if ($user == "" && \OC::$server->getUserSession()->isLoggedIn()) {
+			$user = OC_User::getUser();
+		}
+		if ($user != "") {
+
+			$userDir = '/' . $user . '/files';
+
+			//jail the user into his "home" directory
+			\OC\Files\Filesystem::init($user, $userDir);
+
+			OC_Hook::emit('OC_Filesystem', 'setup', array('user' => $user, 'user_dir' => $userDir));
+		}
+	}
+
 	/**
 	 * check if a password is required for each public link
 	 *

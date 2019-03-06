@@ -4,9 +4,33 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
+class ComposerStaticInitabac718a5ea116e52f09ffa2c77cc9a7
 {
+    public static $files = array (
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        '6b06ce8ccf69c43a60a1e48495a034c9' => __DIR__ . '/..' . '/react/promise-timer/src/functions.php',
+        'cea474b4340aa9fa53661e887a21a316' => __DIR__ . '/..' . '/react/promise-stream/src/functions_include.php',
+        'ebf8799635f67b5d7248946fe2154f4a' => __DIR__ . '/..' . '/ringcentral/psr7/src/functions_include.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'RingCentral\\Psr7\\' => 17,
+            'React\\Stream\\' => 13,
+            'React\\Socket\\' => 13,
+            'React\\Promise\\Timer\\' => 20,
+            'React\\Promise\\Stream\\' => 21,
+            'React\\Promise\\' => 14,
+            'React\\Http\\' => 11,
+            'React\\EventLoop\\' => 16,
+            'React\\Dns\\' => 10,
+            'React\\Cache\\' => 12,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
         'O' => 
         array (
             'OC\\Settings\\' => 12,
@@ -14,9 +38,57 @@ class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
             'OC\\' => 3,
             'OCP\\' => 4,
         ),
+        'J' => 
+        array (
+            'JakubOnderka\\PhpConsoleColor\\' => 29,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'RingCentral\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ringcentral/psr7/src',
+        ),
+        'React\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/stream/src',
+        ),
+        'React\\Socket\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/socket/src',
+        ),
+        'React\\Promise\\Timer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise-timer/src',
+        ),
+        'React\\Promise\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise-stream/src',
+        ),
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'React\\Http\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/http/src',
+        ),
+        'React\\EventLoop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/event-loop/src',
+        ),
+        'React\\Dns\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/dns/src',
+        ),
+        'React\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/cache/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'OC\\Settings\\' => 
         array (
             0 => __DIR__ . '/../../..' . '/settings',
@@ -33,9 +105,68 @@ class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
         array (
             0 => __DIR__ . '/../../..' . '/lib/public',
         ),
+        'JakubOnderka\\PhpConsoleColor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'J' => 
+        array (
+            'JakubOnderka\\PhpConsoleHighlighter' => 
+            array (
+                0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
+            ),
+        ),
+        'E' => 
+        array (
+            'Evenement' => 
+            array (
+                0 => __DIR__ . '/..' . '/evenement/evenement/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
+        'Evenement\\EventEmitter' => __DIR__ . '/..' . '/evenement/evenement/src/Evenement/EventEmitter.php',
+        'Evenement\\EventEmitterInterface' => __DIR__ . '/..' . '/evenement/evenement/src/Evenement/EventEmitterInterface.php',
+        'Evenement\\EventEmitterTrait' => __DIR__ . '/..' . '/evenement/evenement/src/Evenement/EventEmitterTrait.php',
+        'ExampleClass' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/tests/skip-on-5.3/class.php',
+        'ExampleTrait' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/tests/skip-on-5.3/trait.php',
+        'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
+        'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
+        'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'JakubOnderka\\PhpParallelLint\\ArrayIterator' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Settings.php',
+        'JakubOnderka\\PhpParallelLint\\Blame' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Error.php',
+        'JakubOnderka\\PhpParallelLint\\ConsoleWriter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\Error' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Error.php',
+        'JakubOnderka\\PhpParallelLint\\ErrorFormatter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/ErrorFormatter.php',
+        'JakubOnderka\\PhpParallelLint\\Exception' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/exceptions.php',
+        'JakubOnderka\\PhpParallelLint\\FileWriter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\IWriter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\InvalidArgumentException' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/exceptions.php',
+        'JakubOnderka\\PhpParallelLint\\JsonOutput' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\Manager' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Manager.php',
+        'JakubOnderka\\PhpParallelLint\\MultipleWriter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\NotExistsPathException' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/exceptions.php',
+        'JakubOnderka\\PhpParallelLint\\NullWriter' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\Output' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\ParallelLint' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/ParallelLint.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\GitBlameProcess' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/GitBlameProcess.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\LintProcess' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/LintProcess.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\PhpExecutable' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/PhpExecutable.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\PhpProcess' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/PhpProcess.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\Process' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/Process.php',
+        'JakubOnderka\\PhpParallelLint\\Process\\SkipLintProcess' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Process/SkipLintProcess.php',
+        'JakubOnderka\\PhpParallelLint\\RecursiveDirectoryFilterIterator' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Manager.php',
+        'JakubOnderka\\PhpParallelLint\\Result' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Result.php',
+        'JakubOnderka\\PhpParallelLint\\RunTimeException' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/exceptions.php',
+        'JakubOnderka\\PhpParallelLint\\Settings' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Settings.php',
+        'JakubOnderka\\PhpParallelLint\\SyntaxError' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Error.php',
+        'JakubOnderka\\PhpParallelLint\\TextOutput' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JakubOnderka\\PhpParallelLint\\TextOutputColored' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/Output.php',
+        'JsonSerializable' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/src/JsonSerializable.php',
         'OCP\\API' => __DIR__ . '/../../..' . '/lib/public/API.php',
         'OCP\\Accounts\\IAccount' => __DIR__ . '/../../..' . '/lib/public/Accounts/IAccount.php',
         'OCP\\Accounts\\IAccountManager' => __DIR__ . '/../../..' . '/lib/public/Accounts/IAccountManager.php',
@@ -61,6 +192,7 @@ class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
         'OCP\\AppFramework\\Db\\MultipleObjectsReturnedException' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Db/MultipleObjectsReturnedException.php',
         'OCP\\AppFramework\\Db\\QBMapper' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Db/QBMapper.php',
         'OCP\\AppFramework\\Http' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Http.php',
+        'OCP\\AppFramework\\HttpContext' => __DIR__ . '/../../..' . '/lib/public/AppFramework/HttpContext.php',
         'OCP\\AppFramework\\Http\\ContentSecurityPolicy' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Http/ContentSecurityPolicy.php',
         'OCP\\AppFramework\\Http\\DataDisplayResponse' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Http/DataDisplayResponse.php',
         'OCP\\AppFramework\\Http\\DataDownloadResponse' => __DIR__ . '/../../..' . '/lib/public/AppFramework/Http/DataDownloadResponse.php',
@@ -1189,14 +1321,139 @@ class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
         'OC\\User\\NoUserException' => __DIR__ . '/../../..' . '/lib/private/User/NoUserException.php',
         'OC\\User\\Session' => __DIR__ . '/../../..' . '/lib/private/User/Session.php',
         'OC\\User\\User' => __DIR__ . '/../../..' . '/lib/private/User/User.php',
+        'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
+        'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
+        'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
+        'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
+        'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
+        'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
+        'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
+        'React\\Cache\\ArrayCache' => __DIR__ . '/..' . '/react/cache/src/ArrayCache.php',
+        'React\\Cache\\CacheInterface' => __DIR__ . '/..' . '/react/cache/src/CacheInterface.php',
+        'React\\Dns\\BadServerException' => __DIR__ . '/..' . '/react/dns/src/BadServerException.php',
+        'React\\Dns\\Config\\Config' => __DIR__ . '/..' . '/react/dns/src/Config/Config.php',
+        'React\\Dns\\Config\\FilesystemFactory' => __DIR__ . '/..' . '/react/dns/src/Config/FilesystemFactory.php',
+        'React\\Dns\\Config\\HostsFile' => __DIR__ . '/..' . '/react/dns/src/Config/HostsFile.php',
+        'React\\Dns\\Model\\HeaderBag' => __DIR__ . '/..' . '/react/dns/src/Model/HeaderBag.php',
+        'React\\Dns\\Model\\Message' => __DIR__ . '/..' . '/react/dns/src/Model/Message.php',
+        'React\\Dns\\Model\\Record' => __DIR__ . '/..' . '/react/dns/src/Model/Record.php',
+        'React\\Dns\\Protocol\\BinaryDumper' => __DIR__ . '/..' . '/react/dns/src/Protocol/BinaryDumper.php',
+        'React\\Dns\\Protocol\\Parser' => __DIR__ . '/..' . '/react/dns/src/Protocol/Parser.php',
+        'React\\Dns\\Query\\CachedExecutor' => __DIR__ . '/..' . '/react/dns/src/Query/CachedExecutor.php',
+        'React\\Dns\\Query\\CancellationException' => __DIR__ . '/..' . '/react/dns/src/Query/CancellationException.php',
+        'React\\Dns\\Query\\Executor' => __DIR__ . '/..' . '/react/dns/src/Query/Executor.php',
+        'React\\Dns\\Query\\ExecutorInterface' => __DIR__ . '/..' . '/react/dns/src/Query/ExecutorInterface.php',
+        'React\\Dns\\Query\\HostsFileExecutor' => __DIR__ . '/..' . '/react/dns/src/Query/HostsFileExecutor.php',
+        'React\\Dns\\Query\\Query' => __DIR__ . '/..' . '/react/dns/src/Query/Query.php',
+        'React\\Dns\\Query\\RecordBag' => __DIR__ . '/..' . '/react/dns/src/Query/RecordBag.php',
+        'React\\Dns\\Query\\RecordCache' => __DIR__ . '/..' . '/react/dns/src/Query/RecordCache.php',
+        'React\\Dns\\Query\\RetryExecutor' => __DIR__ . '/..' . '/react/dns/src/Query/RetryExecutor.php',
+        'React\\Dns\\Query\\TimeoutException' => __DIR__ . '/..' . '/react/dns/src/Query/TimeoutException.php',
+        'React\\Dns\\Query\\TimeoutExecutor' => __DIR__ . '/..' . '/react/dns/src/Query/TimeoutExecutor.php',
+        'React\\Dns\\Query\\UdpTransportExecutor' => __DIR__ . '/..' . '/react/dns/src/Query/UdpTransportExecutor.php',
+        'React\\Dns\\RecordNotFoundException' => __DIR__ . '/..' . '/react/dns/src/RecordNotFoundException.php',
+        'React\\Dns\\Resolver\\Factory' => __DIR__ . '/..' . '/react/dns/src/Resolver/Factory.php',
+        'React\\Dns\\Resolver\\Resolver' => __DIR__ . '/..' . '/react/dns/src/Resolver/Resolver.php',
+        'React\\EventLoop\\ExtEvLoop' => __DIR__ . '/..' . '/react/event-loop/src/ExtEvLoop.php',
+        'React\\EventLoop\\ExtEventLoop' => __DIR__ . '/..' . '/react/event-loop/src/ExtEventLoop.php',
+        'React\\EventLoop\\ExtLibevLoop' => __DIR__ . '/..' . '/react/event-loop/src/ExtLibevLoop.php',
+        'React\\EventLoop\\ExtLibeventLoop' => __DIR__ . '/..' . '/react/event-loop/src/ExtLibeventLoop.php',
+        'React\\EventLoop\\ExtUvLoop' => __DIR__ . '/..' . '/react/event-loop/src/ExtUvLoop.php',
+        'React\\EventLoop\\Factory' => __DIR__ . '/..' . '/react/event-loop/src/Factory.php',
+        'React\\EventLoop\\LoopInterface' => __DIR__ . '/..' . '/react/event-loop/src/LoopInterface.php',
+        'React\\EventLoop\\SignalsHandler' => __DIR__ . '/..' . '/react/event-loop/src/SignalsHandler.php',
+        'React\\EventLoop\\StreamSelectLoop' => __DIR__ . '/..' . '/react/event-loop/src/StreamSelectLoop.php',
+        'React\\EventLoop\\Tick\\FutureTickQueue' => __DIR__ . '/..' . '/react/event-loop/src/Tick/FutureTickQueue.php',
+        'React\\EventLoop\\TimerInterface' => __DIR__ . '/..' . '/react/event-loop/src/TimerInterface.php',
+        'React\\EventLoop\\Timer\\Timer' => __DIR__ . '/..' . '/react/event-loop/src/Timer/Timer.php',
+        'React\\EventLoop\\Timer\\Timers' => __DIR__ . '/..' . '/react/event-loop/src/Timer/Timers.php',
+        'React\\Http\\Io\\ChunkedDecoder' => __DIR__ . '/..' . '/react/http/src/Io/ChunkedDecoder.php',
+        'React\\Http\\Io\\ChunkedEncoder' => __DIR__ . '/..' . '/react/http/src/Io/ChunkedEncoder.php',
+        'React\\Http\\Io\\CloseProtectionStream' => __DIR__ . '/..' . '/react/http/src/Io/CloseProtectionStream.php',
+        'React\\Http\\Io\\HttpBodyStream' => __DIR__ . '/..' . '/react/http/src/Io/HttpBodyStream.php',
+        'React\\Http\\Io\\IniUtil' => __DIR__ . '/..' . '/react/http/src/Io/IniUtil.php',
+        'React\\Http\\Io\\LengthLimitedStream' => __DIR__ . '/..' . '/react/http/src/Io/LengthLimitedStream.php',
+        'React\\Http\\Io\\MiddlewareRunner' => __DIR__ . '/..' . '/react/http/src/Io/MiddlewareRunner.php',
+        'React\\Http\\Io\\MultipartParser' => __DIR__ . '/..' . '/react/http/src/Io/MultipartParser.php',
+        'React\\Http\\Io\\PauseBufferStream' => __DIR__ . '/..' . '/react/http/src/Io/PauseBufferStream.php',
+        'React\\Http\\Io\\RequestHeaderParser' => __DIR__ . '/..' . '/react/http/src/Io/RequestHeaderParser.php',
+        'React\\Http\\Io\\ServerRequest' => __DIR__ . '/..' . '/react/http/src/Io/ServerRequest.php',
+        'React\\Http\\Io\\UploadedFile' => __DIR__ . '/..' . '/react/http/src/Io/UploadedFile.php',
+        'React\\Http\\Middleware\\LimitConcurrentRequestsMiddleware' => __DIR__ . '/..' . '/react/http/src/Middleware/LimitConcurrentRequestsMiddleware.php',
+        'React\\Http\\Middleware\\RequestBodyBufferMiddleware' => __DIR__ . '/..' . '/react/http/src/Middleware/RequestBodyBufferMiddleware.php',
+        'React\\Http\\Middleware\\RequestBodyParserMiddleware' => __DIR__ . '/..' . '/react/http/src/Middleware/RequestBodyParserMiddleware.php',
+        'React\\Http\\Response' => __DIR__ . '/..' . '/react/http/src/Response.php',
+        'React\\Http\\Server' => __DIR__ . '/..' . '/react/http/src/Server.php',
+        'React\\Http\\StreamingServer' => __DIR__ . '/..' . '/react/http/src/StreamingServer.php',
+        'React\\Promise\\CancellablePromiseInterface' => __DIR__ . '/..' . '/react/promise/src/CancellablePromiseInterface.php',
+        'React\\Promise\\CancellationQueue' => __DIR__ . '/..' . '/react/promise/src/CancellationQueue.php',
+        'React\\Promise\\Deferred' => __DIR__ . '/..' . '/react/promise/src/Deferred.php',
+        'React\\Promise\\Exception\\LengthException' => __DIR__ . '/..' . '/react/promise/src/Exception/LengthException.php',
+        'React\\Promise\\ExtendedPromiseInterface' => __DIR__ . '/..' . '/react/promise/src/ExtendedPromiseInterface.php',
+        'React\\Promise\\FulfilledPromise' => __DIR__ . '/..' . '/react/promise/src/FulfilledPromise.php',
+        'React\\Promise\\LazyPromise' => __DIR__ . '/..' . '/react/promise/src/LazyPromise.php',
+        'React\\Promise\\Promise' => __DIR__ . '/..' . '/react/promise/src/Promise.php',
+        'React\\Promise\\PromiseInterface' => __DIR__ . '/..' . '/react/promise/src/PromiseInterface.php',
+        'React\\Promise\\PromisorInterface' => __DIR__ . '/..' . '/react/promise/src/PromisorInterface.php',
+        'React\\Promise\\RejectedPromise' => __DIR__ . '/..' . '/react/promise/src/RejectedPromise.php',
+        'React\\Promise\\Stream\\UnwrapReadableStream' => __DIR__ . '/..' . '/react/promise-stream/src/UnwrapReadableStream.php',
+        'React\\Promise\\Stream\\UnwrapWritableStream' => __DIR__ . '/..' . '/react/promise-stream/src/UnwrapWritableStream.php',
+        'React\\Promise\\Timer\\TimeoutException' => __DIR__ . '/..' . '/react/promise-timer/src/TimeoutException.php',
+        'React\\Promise\\UnhandledRejectionException' => __DIR__ . '/..' . '/react/promise/src/UnhandledRejectionException.php',
+        'React\\Socket\\Connection' => __DIR__ . '/..' . '/react/socket/src/Connection.php',
+        'React\\Socket\\ConnectionInterface' => __DIR__ . '/..' . '/react/socket/src/ConnectionInterface.php',
+        'React\\Socket\\Connector' => __DIR__ . '/..' . '/react/socket/src/Connector.php',
+        'React\\Socket\\ConnectorInterface' => __DIR__ . '/..' . '/react/socket/src/ConnectorInterface.php',
+        'React\\Socket\\DnsConnector' => __DIR__ . '/..' . '/react/socket/src/DnsConnector.php',
+        'React\\Socket\\FixedUriConnector' => __DIR__ . '/..' . '/react/socket/src/FixedUriConnector.php',
+        'React\\Socket\\LimitingServer' => __DIR__ . '/..' . '/react/socket/src/LimitingServer.php',
+        'React\\Socket\\SecureConnector' => __DIR__ . '/..' . '/react/socket/src/SecureConnector.php',
+        'React\\Socket\\SecureServer' => __DIR__ . '/..' . '/react/socket/src/SecureServer.php',
+        'React\\Socket\\Server' => __DIR__ . '/..' . '/react/socket/src/Server.php',
+        'React\\Socket\\ServerInterface' => __DIR__ . '/..' . '/react/socket/src/ServerInterface.php',
+        'React\\Socket\\StreamEncryption' => __DIR__ . '/..' . '/react/socket/src/StreamEncryption.php',
+        'React\\Socket\\TcpConnector' => __DIR__ . '/..' . '/react/socket/src/TcpConnector.php',
+        'React\\Socket\\TcpServer' => __DIR__ . '/..' . '/react/socket/src/TcpServer.php',
+        'React\\Socket\\TimeoutConnector' => __DIR__ . '/..' . '/react/socket/src/TimeoutConnector.php',
+        'React\\Socket\\UnixConnector' => __DIR__ . '/..' . '/react/socket/src/UnixConnector.php',
+        'React\\Socket\\UnixServer' => __DIR__ . '/..' . '/react/socket/src/UnixServer.php',
+        'React\\Stream\\CompositeStream' => __DIR__ . '/..' . '/react/stream/src/CompositeStream.php',
+        'React\\Stream\\DuplexResourceStream' => __DIR__ . '/..' . '/react/stream/src/DuplexResourceStream.php',
+        'React\\Stream\\DuplexStreamInterface' => __DIR__ . '/..' . '/react/stream/src/DuplexStreamInterface.php',
+        'React\\Stream\\ReadableResourceStream' => __DIR__ . '/..' . '/react/stream/src/ReadableResourceStream.php',
+        'React\\Stream\\ReadableStreamInterface' => __DIR__ . '/..' . '/react/stream/src/ReadableStreamInterface.php',
+        'React\\Stream\\ThroughStream' => __DIR__ . '/..' . '/react/stream/src/ThroughStream.php',
+        'React\\Stream\\Util' => __DIR__ . '/..' . '/react/stream/src/Util.php',
+        'React\\Stream\\WritableResourceStream' => __DIR__ . '/..' . '/react/stream/src/WritableResourceStream.php',
+        'React\\Stream\\WritableStreamInterface' => __DIR__ . '/..' . '/react/stream/src/WritableStreamInterface.php',
+        'RingCentral\\Psr7\\AppendStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/AppendStream.php',
+        'RingCentral\\Psr7\\BufferStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/BufferStream.php',
+        'RingCentral\\Psr7\\CachingStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/CachingStream.php',
+        'RingCentral\\Psr7\\DroppingStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/DroppingStream.php',
+        'RingCentral\\Psr7\\FnStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/FnStream.php',
+        'RingCentral\\Psr7\\InflateStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/InflateStream.php',
+        'RingCentral\\Psr7\\LazyOpenStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/LazyOpenStream.php',
+        'RingCentral\\Psr7\\LimitStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/LimitStream.php',
+        'RingCentral\\Psr7\\MessageTrait' => __DIR__ . '/..' . '/ringcentral/psr7/src/MessageTrait.php',
+        'RingCentral\\Psr7\\MultipartStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/MultipartStream.php',
+        'RingCentral\\Psr7\\NoSeekStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/NoSeekStream.php',
+        'RingCentral\\Psr7\\PumpStream' => __DIR__ . '/..' . '/ringcentral/psr7/src/PumpStream.php',
+        'RingCentral\\Psr7\\Request' => __DIR__ . '/..' . '/ringcentral/psr7/src/Request.php',
+        'RingCentral\\Psr7\\Response' => __DIR__ . '/..' . '/ringcentral/psr7/src/Response.php',
+        'RingCentral\\Psr7\\ServerRequest' => __DIR__ . '/..' . '/ringcentral/psr7/src/ServerRequest.php',
+        'RingCentral\\Psr7\\Stream' => __DIR__ . '/..' . '/ringcentral/psr7/src/Stream.php',
+        'RingCentral\\Psr7\\StreamDecoratorTrait' => __DIR__ . '/..' . '/ringcentral/psr7/src/StreamDecoratorTrait.php',
+        'RingCentral\\Psr7\\StreamWrapper' => __DIR__ . '/..' . '/ringcentral/psr7/src/StreamWrapper.php',
+        'RingCentral\\Psr7\\Uri' => __DIR__ . '/..' . '/ringcentral/psr7/src/Uri.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitabac718a5ea116e52f09ffa2c77cc9a7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitabac718a5ea116e52f09ffa2c77cc9a7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitabac718a5ea116e52f09ffa2c77cc9a7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitabac718a5ea116e52f09ffa2c77cc9a7::$classMap;
 
         }, null, ClassLoader::class);
     }

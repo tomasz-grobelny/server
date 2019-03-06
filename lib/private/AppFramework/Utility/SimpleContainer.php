@@ -117,9 +117,11 @@ class SimpleContainer extends Container implements IContainer {
 			return $this->offsetGet($name);
 		} else {
 			$object = $this->resolve($name);
-			$this->registerService($name, function () use ($object) {
-				return $object;
-			});
+			if($name!='OC\Core\Controller\PreviewController') {
+				$this->registerService($name, function () use ($object) {
+					return $object;
+				});
+			}
 			return $object;
 		}
 	}

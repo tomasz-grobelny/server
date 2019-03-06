@@ -2088,7 +2088,7 @@
 
 			if (typeof urlSpec.fileId !== 'undefined') {
 				delete urlSpec.file;
-				return OC.generateUrl('/core/preview?') + $.param(urlSpec);
+				return '/proxy.php?' + $.param(urlSpec);
 			} else {
 				delete urlSpec.fileId;
 				return OC.generateUrl('/core/preview.png?') + $.param(urlSpec);
